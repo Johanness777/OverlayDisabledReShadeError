@@ -259,7 +259,7 @@ bool reshade::runtime::on_init()
 	const api::resource_desc back_buffer_desc = _device->get_resource_desc(_swapchain->get_back_buffer(0));
 
 	// Avoid initializing on very small swap chains (e.g. implicit swap chain in The Sims 4, which is not used to present in windowed mode)
-	if (back_buffer_desc.texture.width <= 1200 && back_buffer_desc.texture.height <= 700)
+	if (back_buffer_desc.texture.width <= 3000 && back_buffer_desc.texture.height <= 2000)
 		return false;
 
 	_width = back_buffer_desc.texture.width;
