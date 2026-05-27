@@ -1138,7 +1138,7 @@ void reshade::runtime::draw_gui()
 		ImGui::PopStyleVar();
 	}
 
-	if (show_message_window)
+	if (show_message_window && false)
 	{
 		ImGui::SetNextWindowPos(_imgui_context->Style.WindowPadding + viewport_offset);
 		ImGui::SetNextWindowSize(ImVec2(imgui_io.DisplaySize.x - 20.0f, 0.0f));
