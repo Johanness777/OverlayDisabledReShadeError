@@ -1151,7 +1151,7 @@ void reshade::runtime::draw_gui()
 			ImGuiWindowFlags_NoDocking |
 			ImGuiWindowFlags_NoFocusOnAppearing);
 
-		if (!_preset_save_successful)
+		if (_preset_save_successful && false)
 		{
 			ImGui::TextColored(COLOR_RED, _("Unable to save configuration and/or current preset. Make sure file permissions are set up to allow writing to these paths and their parent directories:\n%s\n%s"), _config_path.u8string().c_str(), _current_preset_path.u8string().c_str());
 		}
